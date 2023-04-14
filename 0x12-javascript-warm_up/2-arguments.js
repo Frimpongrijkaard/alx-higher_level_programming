@@ -9,7 +9,6 @@ if (number === 2) {
 }
 else if (number === 3) {
 	console.log('Argument found');
-}
-else {
+} else {
 	console.log('Argument found');
 }
