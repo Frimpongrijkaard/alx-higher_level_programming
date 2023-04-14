@@ -2,10 +2,5 @@
 
 //Script that print the first argument passed to it
 
-const args = process.argv[2]
-
-if (typeof args === 'undefined') {
-	console.log('No argument');
-} else {
-	console.log(args);
-}
+const args = process.argv.length;
+console.log(args === 2 ? 'No argument' : args === 3 ? 'Argument found' : 'Arguments found');
