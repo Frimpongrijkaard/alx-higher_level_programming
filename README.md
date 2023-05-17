@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-this is about pyrhon higher level coding
-=======
-this is an alx higher level programming and it is abot python script
->>>>>>> refs/remotes/origin/main
+Python programming and scripting
+_______________________
+
+this cript is about higher learning of python programming.
