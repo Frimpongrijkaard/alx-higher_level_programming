@@ -3,10 +3,5 @@
 -- Each record should display tv_genres.name
 -- Results must be sorted ascending order by genre name
 -- You can use max of two SELECT statements
-SELECT g.name FROM tv_genres g WHERE g.name NOT IN (
-      SELECT g.name
-      FROM tv_genres gtv
-      INNER JOIN tv_show_genres m ON gtv.id = m.genre_id
-      INNER JOIN tv_shows s ON m.show_id = s.id
-      WHERE s.title = 'Dexter'
+SELECT g.name FROM tv_genres g WHERE g.name NOT IN (SELECT g.name FROM tv_genres gtv INNER JOIN tv_show_genres m ON gtv.id = m.genre_id INNER JOIN tv_shows s ON m.show_id = s.id WHERE s.title = 'Dexter'
 ) ORDER BY g.name ASC;
