@@ -1,4 +1,4 @@
-#!/bin/usr/bin/node
+#!/usr/bin/node
 
 // A script that print two Argument passed to it in the following format: "is"
 
