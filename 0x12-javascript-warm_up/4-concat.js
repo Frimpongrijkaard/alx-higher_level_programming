@@ -2,6 +2,6 @@
 
 // A script that print two Argument passed to it in the following format: "is"
 
-args1 = process.argv[2];
-args2 = process.argv[3];
+const args1 = process.argv[2];
+const args2 = process.argv[3];
 console.log(args1 + ' ' + 'is' + ' ' + args2);
