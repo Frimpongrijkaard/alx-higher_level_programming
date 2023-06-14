@@ -2,6 +2,5 @@
 
 // Script that print the first argument passed to it
 
-const args = process.argv.slice(2);
-const oneArgument = args[0] === 'undefined' ? 'No argument' : args[1];
-console.log(oneArgument);
+const args = process.argv[2];
+console.log(args === 'undefined' ? 'No argument' : args);
