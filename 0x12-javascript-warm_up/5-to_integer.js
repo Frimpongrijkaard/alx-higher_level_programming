@@ -4,10 +4,8 @@
 
 const nums = Maths.floor(number(process.argv[2]));
 
-if (isNaN(nums) {
+if (number.isInteger(nums) {
+	console.log('My number: ${nums}');
+} else {
 	console.log('Not a number');
-}
-else
-{
-	console.log(`My number: ${nums}` );
 }
