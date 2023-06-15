@@ -4,8 +4,4 @@
 
 const nums = Maths.floor(number(process.argv[2]));
 
-if (number.isInteger(nums) {
-	console.log('My number: ${nums}');
-} else {
-	console.log('Not a number');
-}
+console.log(number.isInteger(nums) ? `My number: ${nums}`: 'Not a number'); 
