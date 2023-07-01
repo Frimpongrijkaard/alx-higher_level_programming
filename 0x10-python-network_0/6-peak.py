@@ -3,13 +3,13 @@
 """
 
 
-def find_peak(list_integers):
+def find_peak(list_of_integers):
     """
     Args:
         list_integers(int): list of integers to find peak 
     Returns: peak of list_integers
     """
-    size = len(list_integers)
+    size = len(list_of_integers)
     mide = size
     mid = size // 2
 
@@ -19,13 +19,13 @@ def find_peak(list_integers):
     while True:
         mide = mide // 2
         if (mid < size - 1 and
-                list_integers[mid] < list_integers[mid + 1]):
+                list_of_integers[mid] < list_of_integers[mid + 1]):
             if mide // 2 == 0:
                 mide = 2
             mid = mid + mide // 2
-        elif mide > 0 and list_integers[mid] < list_integers[mid - 1]:
+        elif mide > 0 and list_of_integers[mid] < list_of_integers[mid - 1]:
             if mide // 2 == 0:
                 mide = 2
             mid = mid - mide // 2
         else:
-            return list_integers[mid]
+            return list_of_integers[mid]
