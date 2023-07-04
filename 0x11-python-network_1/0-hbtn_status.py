@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 
 import urllib.request
-"""define a function that fetch url content"""
+"""define a function that fetch url content
+Usage: ./0-bntn_status.py
 
+"""
+
+import urllib.request
 
 if __name__ == "__main__":
     url = "https://alx-intranet.hbtn.io/status"
