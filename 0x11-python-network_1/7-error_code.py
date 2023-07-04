@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+"""python script that takes url and send a request to url"""
 
 import sys
 import requests
 
-def Error_short_code(url):
-    """function that takes url and send a request to url"""
+if __name__ == "__main__":
+    url = sys.argv[1]
+
     response = requests.get(url)
     code = response.status_code
     if code >= 400:
@@ -12,6 +14,3 @@ def Error_short_code(url):
     else:
         print(response.text)
 
-if __name__ == "__main__":
-    url = sys.argv[1]
-    Error_short_code(url)
