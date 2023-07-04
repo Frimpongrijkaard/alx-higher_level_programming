@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""a script that fetch url"""
+"""pthon script that fetch url
+Usage: ./4-btn_status.py
+"""
 import requests
 
 if __name__ == "__main__":
