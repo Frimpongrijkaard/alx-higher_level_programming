@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""function that display Error code from url"""
+"""python script  that display Error code from url"""
 import sys
 import urllib.request
 from urllib.error import HTTPError
