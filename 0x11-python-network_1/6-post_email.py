@@ -10,4 +10,3 @@ if __name__ == "__main__":
 
     response = requests.post(url, data=mail)
     print(response.text)
-
