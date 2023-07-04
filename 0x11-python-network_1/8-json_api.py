@@ -8,10 +8,8 @@ import sys
 
 if __name__ == "__main__":
     q = "" if len(sys.argv) == 1 else sys.argv[1]
-
-
     url = "http://0.0.0.0:5000/search_user"
-    data = {'q' : q}
+    data = {'q': q}
 
     response = requests.post(url, data=data)
     try:
@@ -23,5 +21,3 @@ if __name__ == "__main__":
                 print("No result")
     except ValueError:
         print("Not a valid JSON")
-
-
