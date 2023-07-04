@@ -13,7 +13,7 @@ if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
     data = {'q' : q}
 
-    response = request.post(url, data=data)
+    response = requests.post(url, data=data)
     try:
         json_d = response.json()
         if isinstance(json_d, dict):
